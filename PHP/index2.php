@@ -240,28 +240,28 @@ include 'class/Ja101k.php';
 include 'class/Ja106k.php';
 
 $Ja101k = new Ja101k(new Zdroj220V3A());
-$Ja101k-> setBaterie(new XiaomiBattery\Baterie12V3A());
-$JA106k = new Ja106k (new Zdroj220V5A());
+$Ja101k->setBaterie(new XiaomiBattery\Baterie12V3A());
+$JA106k = new Ja106k(new Zdroj220V5A());
 
 var_dump($Ja101k);
 
 var_dump($JA106k);
 /**
-$honzik = 3;
-function pocethonziku($honzik) {
-    if($honzik == 2) {
-        return "Spravny honzik";
-    } else {
-        return "Spatny honzik";
-    }
-        
- }
-var_dump(pocethonziku($honzik));
+  $honzik = 3;
+  function pocethonziku($honzik) {
+  if($honzik == 2) {
+  return "Spravny honzik";
+  } else {
+  return "Spatny honzik";
+  }
 
-echo '<br>';
-include 'class/Honza.php';
-include 'class/Honzik.php';
-include 'class/Honzicek.php'; 
+  }
+  var_dump(pocethonziku($honzik));
+
+  echo '<br>';
+  include 'class/Honza.php';
+  include 'class/Honzik.php';
+  include 'class/Honzicek.php';
  */
 $jmena = "David, Andrej, Monika Karel-Ivana, Maxim_Monik, Kaja ";
 var_dump($jmena);
@@ -279,20 +279,20 @@ var_dump($jmena);
 //strtolower($jmena);
 //ucwords($jmena);
 //var_dump($jmena);
-/**str_replace($jmena, $JA106k, $Ja101k);
-preg_replace($jmena, $JA106k, 
-$explode ($jmena, $detectors);
-foreach ($zelenina as $key => $value);
+/* * str_replace($jmena, $JA106k, $Ja101k);
+  preg_replace($jmena, $JA106k,
+  $explode ($jmena, $detectors);
+  foreach ($zelenina as $key => $value);
 
-strtolower($jmena);
-ucwords($jmena);
+  strtolower($jmena);
+  ucwords($jmena);
  * 
  */
 
 
 include 'class/Cena.php';
 
- 
+
 $cena = 28.55678;
 $mena = " CZK ";
 $penize = new cena($cena, $mena);

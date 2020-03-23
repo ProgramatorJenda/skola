@@ -1,15 +1,19 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author Honza
- */
+
+//V Interface se implementuji funkce
+
+
 interface iustrednySuchanek {
-    //put your code here
+    
+    //Funkce na dostaní napeti
+    function getNapetiSuchanek();
+    
+    //Funkce na nastavení napeti
+    function setNapetiSuchanek();
+    
+    
+    
+    
 }
