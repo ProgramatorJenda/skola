@@ -11,7 +11,7 @@ interface iustrednySuchanek {
     function getNapetiSuchanek();
     
     //Funkce na nastavení napeti
-    function setNapetiSuchanek();
+    function setNapetiSuchanek($napetiSuchanek);
     
     
     
