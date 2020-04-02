@@ -13,7 +13,8 @@ interface iustrednySuchanek {
     function getNapetiSuchanek();
     
 /**
- * Funkce na nastaveni napeti
+ * 
+ * @param Int $napetiSuchanek
  */
     function setNapetiSuchanek($napetiSuchanek);
     

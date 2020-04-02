@@ -7,18 +7,21 @@
 abstract class ustrednySuchanek implements iustrednySuchanek {
     
 /**
- * Nastaveni protected proměnné
+ *
+ * @var Int 
  */
     protected $napetiSuchanek;
             
 /**
- * Funkce pro získání napětí
+ * 
+ * @return Int
  */
     function getNapetiSuchanek() {
         return $this->napetiSuchanek;
     }
 /**
- * Funkce která nastaví hodnotu napětí
+ * 
+ * @param Int $napetiSuchanek
  */
     function setNapetiSuchanek($napetiSuchanek) {
         $this->napetiSuchanek = $napetiSuchanek;
