@@ -1,10 +1,15 @@
 <?php
 
+/**
+ * Zakladni trida, která dedi abstraktni tridu 
+ */
 
 class ustrednaSuchanek extends ustrednySuchanek {
    
     
     
-    //Nastavení constanty
+/**
+ * Nastaveni konstanty
+ */
     const TYPE = 1;
 }

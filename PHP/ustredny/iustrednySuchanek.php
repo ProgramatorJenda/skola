@@ -1,16 +1,20 @@
 <?php
 
 
-
-//V Interface se implementuji funkce
-
+/**
+ * V interface se implenetuji funkce
+ */
 
 interface iustrednySuchanek {
     
-    //Funkce na dostaní napeti
+ /**
+ * Funkce na dodani napeti
+ */
     function getNapetiSuchanek();
     
-    //Funkce na nastavení napeti
+/**
+ * Funkce na nastaveni napeti
+ */
     function setNapetiSuchanek($napetiSuchanek);
     
     
