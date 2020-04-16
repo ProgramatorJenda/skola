@@ -1,24 +1,20 @@
 <?php
 
-
 /**
+ * @author Jan Suchánek
  * V interface se implenetuji funkce
  */
-
 interface iustrednySuchanek {
-    
- /**
- * Funkce na dodani napeti, musi se implementovat
- */
+
+    /**
+     * @author Jan Suchánek
+     * Funkce na dodani napeti, musi se implementovat
+     */
     function getNapetiSuchanek();
-    
-/**
- * Funkce na nastaveni napeti, musi se implementovat
- * @param Int $napetiSuchanek
- */
-    function setNapetiSuchanek($napetiSuchanek);
-    
-    
-    
-    
+
+    /**
+     * @author Jan Suchánek
+     * @param string $napetiSuchanek
+     */
+    function setNapetiSuchanek(string $napetiSuchanek);
 }
