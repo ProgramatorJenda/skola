@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @author Jan Suchánek
  * V interface se implenetuji funkce
@@ -14,7 +15,7 @@ interface iustrednySuchanek {
 
     /**
      * @author Jan Suchánek
-     * @param string $napetiSuchanek
+     * @param int $napetiSuchanek
      */
-    function setNapetiSuchanek(string $napetiSuchanek);
+    function setNapetiSuchanek(int $napetiSuchanek);
 }

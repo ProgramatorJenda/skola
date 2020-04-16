@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * Zkontroluje návratné hodnoty
+ */
+declare (strict_types=1);
+
+/**
  * Inkludovani ostatních souboru 
  * @author Jan Suchánek
  */

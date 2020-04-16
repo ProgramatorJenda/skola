@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Zkontroluje návratné hodnoty
- */
-declare (strict_types=1);
 
 /**
  * Abstraktní třída, která musí být děděna 
