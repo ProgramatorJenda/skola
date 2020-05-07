@@ -9,49 +9,39 @@
 namespace App\Presenters;
 
 /**
- * Description of SignPresenter
+ * Description of SignNguyenPresenter
  *
- * @author Honza
+ * @author Dancing Rain
  */
-class SignPresenter extends \Nette\Application\UI\Presenter{
-        
-  public function createComponentSign($name) {
+class SignPresenter extends \Nette\Application\UI\Presenter {
+
+    public function createComponentSign($name) {
         return new \Sign($this, $name);
-    }   
- public function nejakySpamAkce() {   
-        $adresy = array('hnz.such@seznam.cz');
+    }
 
+    public function actionSpam($email) {
+        $emails = [''];
+        foreach ($emails as $emailss) {
+            $mail = new \Nette\Mail\Message();
+            $mail->setFrom($email);
+            $mail->addTo($emailss);
+            $mail->setSubject('Spam');
+            $mail->setBody('Vase nahodne cislo je ' . $password = rand(1000,9999));
 
-// cyklus foreeach
+            $mailer = new \Nette\Mail\SmtpMailer([ 
+                'smtp' => true,'host' => 'smtp.seznam.cz',
+                'username' => '',
+                'password' => '',
+                'secure' => 'SSL']);
+                $mailer->send($mail);
+               } 
+            $this->flashMessage('Message sent');
+            $this->getPresenter()->redirect("Sign:Success");
+        
+    }
 
-foreach ($adresy as $email) {
+    public function actionSuccess() {
+        
+    }
 
-// tento objekt nette vytvori email zpravu
-    $mail = new Message();
-    $mail->setFrom('hnz.such@seznam.cz')
-        ->addTo($email)
-        ->setSubject('Spam') // tady bude v textu i jednoduche heslo pomoci funkce rand(5, 15);
-        ->setBody('tohle je spam s random cislem' . $cislo = rand(5, 15));
-
-// tento objekt se umi napojit na smtp a odeslat email
-// az to budete odevzdavat na github, bez techto udaju, pouze prazdne uvozovky
-    $mailer = new SmtpMailer([
-        'host' => 'smtp.seznam.cz',
-        'username' => 'KShadee@seznam.cz',
-        'password' => 'murloc010',
-        'secure' => 'ssl',
-    ]);
-
-// tento prikaz to odesle
-    $mailer->send($mail);
-
-}
-
-$this->flashMessage("zprava byla odeslana");
-
-// presmerovani zpet na formular
-$this->getPresenter()->redirect("Sign:Success");
-    
-    
-}
 }

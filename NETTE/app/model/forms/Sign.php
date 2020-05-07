@@ -1,26 +1,32 @@
 <?php
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 /**
- * Description of Sign
+ * Description of SignNguyen
  *
- * @author Honza
+ * @author Dancing Rain
  */
 class Sign extends Nette\Application\UI\Form{
-    
-        public function __construct($parent, $name) {
+    public function __construct($parent, $name) {
         parent::__construct();
 
-        $this->setAction($parent->link('Sign:Spam'));
+        $this->setAction($parent->link('Sign:spam'));
         
         $this->setMethod("formSubmitted");
-
+        
         $this->addEmail('email', 'Email')
-                ->setRequired('Je potřeba vyplnit email')
-                ->addRule(\Nette\Forms\Form::EMAIL, 'toto není emailová adresa');
+                ->setRequired(' je potreba vyplnit email')
+                ->addRule(\Nette\Forms\Form::EMAIL, 'toto neni emailova adresa');
         
         $this->addSubmit('odeslat', 'Odeslat');
         
+   
         
     }
 }
+
